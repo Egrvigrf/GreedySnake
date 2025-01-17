@@ -1,11 +1,11 @@
 # greedy_snake
-Implement a console-based Snake game in C++ with 170 lines of code, single-file, fully commented, and featuring a custom doubly linked list. 用170行代码实现控制台版贪吃蛇（C++）,单文件带详细注释，手写双向链表（中英注释）。  
+Implement a console-based Snake game in C++ with 170 lines of code, single-file, fully commented, and featuring a custom doubly linked list. 用170行代码实现控制台版贪吃蛇（C++）,单文件带详细注释，手写双向链表。  
 
 ![Display GIF](display.gif)  
 
 # Introduction  
 Implement the Snake game using a linked list. When the snake moves, a new head node is added while a tail node is deleted. When the snake eats food, only the head node is updated at the food position.  
-more detailed in code comments.   
+more details in code comments.   
 Some techniques used:  
 kbhit(): A non-STL function to read keyboard input, relying on the header file #include <conio.h>.  
 
