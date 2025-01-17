@@ -1,5 +1,5 @@
 # greedy_snake
-greedy_snake within 130 lines(C++), single-file, fully commented, featuring a custom doubly linked list. 用130行代码实现贪吃蛇（C++）,单文件带详细注释，手写双向链表。  
+greedy_snake within 100 lines(C++), single-file, fully commented, featuring a custom doubly linked list. 用100行代码实现贪吃蛇（C++）,单文件带详细注释，手写双向链表。  
 
 ![Display GIF](display.gif)  
 
@@ -24,6 +24,8 @@ Implemented using classes and a singly linked list.
 version 2.0:  
 Replaced the class with a doubly linked list, removed redundant features and code, optimized the time complexity of movement and judgment from O(n) to O(1).  
 --20240706  
+Further optimize the code
+--20250117
 
 # 介绍
 用链表实现贪吃蛇，移动时新增一个头节点，同时删除一个尾节点；吃到食物时只在食物位置更新头节点。  
@@ -44,4 +46,5 @@ version1.0 :
 version2.0 :   
 不使用类，使用双向链表，删除了冗余功能和代码，把移动和判断的时间复杂度从O(n)优化到O(1)   
 --20240706   
-
+进一步优化代码
+--20250117
