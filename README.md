@@ -7,9 +7,9 @@ Snake game within 100 lines(C++), single-file, fully commented, featuring a cust
 Implement the Snake game using a linked list. When the snake moves, a new head node is added while a tail node is deleted. When the snake eats food, only the head node is updated at the food position.  
 more details in code comments.   
 Some techniques used:  
-kbhit(): A non-STL function to read keyboard input, relying on the header file #include <conio.h>.  
+1. kbhit(): A non-STL function to read keyboard input, relying on the header file #include <conio.h>.  
 
-Control the screen using escape sequences:  
+2. Control the screen using escape sequences:  
 Print a character at a specific position:  
 cout << "\033[" << y << ";" << x << "H" << c;  
 Clear screen:  
@@ -33,9 +33,9 @@ Further optimize the code.
 代码里面有详细注释。  
 
 使用的一些技巧      
-`kbhit()`：非stl，读取键盘输入,依赖头文件`#include <conio.h>`  
+1. `kbhit()`：非stl，读取键盘输入,依赖头文件`#include <conio.h>`  
 
-使用转义序列控制屏幕：    
+2. 使用转义序列控制屏幕：    
 在某处打印字符：`cout << "\033[" << y << ";" << x << "H" << c;`  
 清屏：`cout << "\x1b[2J";`   
 隐藏控制台光标：`cout << "\e[?25l";`  
@@ -47,5 +47,6 @@ version1.0 :
 version2.0 :   
 不使用类，使用双向链表，删除了冗余功能和代码，把移动和判断的时间复杂度从O(n)优化到O(1)   
 --20240706   
+version 3.0:   
 进一步优化代码  
 --20250117  
