@@ -1,5 +1,5 @@
 # greedy_snake
-Implement a console-based Snake game in C++ with 170 lines of code, single-file, fully commented（also in English）, and featuring a custom doubly linked list,click in to see a gif display. 用170行代码实现控制台版贪吃蛇（C++）,单文件带详细注释，手写双向链表，点进来有演示动图。
+Implement a console-based Snake game in C++ with 130 lines of code, single-file, fully commented（also in English）, and featuring a custom doubly linked list,click in to see a gif display. 用130行代码实现控制台版贪吃蛇（C++）,单文件带详细注释，手写双向链表，点进来有演示动图。
 
 ![Display GIF](display.gif)  
 
