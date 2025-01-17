@@ -1,4 +1,3 @@
-
 #include<bits/stdc++.h>
 #include <conio.h> //不是c++标准库 isn't stl 
 using namespace std;
@@ -15,9 +14,10 @@ bool fruit_is_exist = true;
 link_snk* snk_head, * snk_tail;
 const char matchdir[4] = { 'd', 's', 'a', 'w' };
 map<char, char> collide = { {'a','d'},{'d','a'},{'w','s'},{'s','w'} };
-void print_x_y(int y, int x, char c) { cout << "\033[" << y << ";" << x << "H" << c; }
+void print_x_y(int y, int x, char c) { cout << "\033[" << y << ";" << x << "H" << c; } // 移动到某个位置打印字符/字符串 cursor move to (x, y) to print char or string 
 void print_x_y(int y, int x, string c) { cout << "\033[" << y << ";" << x << "H" << c; }
-void Snap(int t) { chrono::milliseconds pauseTime(t); this_thread::sleep_for(pauseTime); } // 作用相当于sleep, 程序暂停执行一段时间
+void clearscreen() {cout << "\x1b[2J"; } // 清屏的转义序列 clear screen
+void Snap(int t) { chrono::milliseconds pauseTime(t); this_thread::sleep_for(pauseTime); } // 作用相当于sleep, 程序暂停执行一段时间 serve as sleep(), pause the program
 void fruit_generate() {
     do {
         fruit_x = rand() % (rows - 2) + 2;
@@ -64,9 +64,9 @@ bool move() { // 蛇移动，同时用一个返回值判断蛇的死活 snake mo
     return true;
 }
 void game_init() {
-    cout << "\x1b[2J"; //清屏的转义序列 clear screen
+    clearscreen(); 
     cout << "\e[?25l"; //隐藏光标的转义序列 hide cursor
-    memset(Mp, 0, sizeof(Mp));//初始化地图为空 0 means empty
+    memset(Mp, 0, sizeof(Mp));//初始化地图为空, 0表示没有东西 0 means empty
     srand(static_cast<unsigned int>(time(NULL)));
     snk_len = 2;
     int randxy[4][2] = { {0, -1}, {-1, 0}, {0, 1}, {1, 0} };
@@ -105,7 +105,7 @@ void game_init() {
     print_x_y(rows + 1, 1,string(brief.size(),' '));
 }
 bool replay() {
-    cout << "\x1b[2J"; // clear screen
+    clearscreen();
     print_x_y(1, 1, "Game over! \n");
     cout << "length:" << snk_len << "\n" << "Tap ant key to replay or 'q' for quitting";
     while (true) {
