@@ -22,10 +22,11 @@ version 1.0:
 Implemented using classes and a singly linked list.  
 --20231225  
 version 2.0:  
-Replaced the class with a doubly linked list, removed redundant features and code, optimized the time complexity of movement and judgment from O(n) to O(1).  
+By removing classes and using a doubly linked list, redundant functionality and code were eliminated, and the time complexity for movement and condition checks was optimized from O(n) to O(1).      
 --20240706  
-Further optimize the code
---20250117
+version 3.0:    
+Further optimize the code.      
+--20250117  
 
 # 介绍
 用链表实现贪吃蛇，移动时新增一个头节点，同时删除一个尾节点；吃到食物时只在食物位置更新头节点。  
@@ -39,7 +40,7 @@ Further optimize the code
 清屏：`cout << "\x1b[2J";`   
 隐藏控制台光标：`cout << "\e[?25l";`  
 
-# 历史
+# 历史  
 version1.0 :     
 用类实现功能，单向链表    
 --20231225     
@@ -47,4 +48,4 @@ version2.0 :
 不使用类，使用双向链表，删除了冗余功能和代码，把移动和判断的时间复杂度从O(n)优化到O(1)   
 --20240706   
 进一步优化代码  
---20250117
+--20250117  
