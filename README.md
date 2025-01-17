@@ -1,5 +1,5 @@
-# greedy_snake
-Snake game within 100 lines(C++), single-file, fully commented, featuring a custom doubly linked list. 用100行代码实现贪吃蛇（C++）,单文件带详细注释，手写双向链表。  
+# GreedySnake
+GreedySnake within 100 lines in C++, single-file, fully commented, featuring a custom doubly linked list. 用100行代码实现贪吃蛇（C++）,单文件带详细注释，手写双向链表。  
 
 ![Display GIF](display.gif)  
 
